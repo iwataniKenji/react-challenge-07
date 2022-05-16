@@ -53,15 +53,15 @@ export default function Home(): JSX.Element {
     return formatted;
   }, [data]);
 
-  // renderizar tela de carregamento
-  if (isLoading && !isError) {
-    return <Loading />;
-  }
+  // // renderizar tela de carregamento
+  // if (isLoading && !isError) {
+  //   return <Loading />;
+  // }
 
-  // renderizar tela de erro
-  if (!isLoading && isError) {
-    return <Error />;
-  }
+  // // renderizar tela de erro
+  // if (!isLoading && isError) {
+  //   return <Error />;
+  // }
 
   return (
     <>
